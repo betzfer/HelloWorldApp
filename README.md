@@ -1,5 +1,7 @@
 # HelloWorldApp
 
+![Logo do Projeto](https://raw.githubusercontent.com/seu_usuario/seu_repositorio/main/logo.png "Logo principal do projeto"){width="200px"}
+
 ## Descrição do Projeto:
 
 ## Sobre o Projeto
