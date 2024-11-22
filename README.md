@@ -1,7 +1,5 @@
 # HelloWorldApp
 
-## Descrição do Projeto:
-
 ## Sobre o Projeto
 Este aplicativo tem como objetivo ensinar programação de forma divertida e interativa, através de mini-games e desafios práticos. O usuário inicia com uma avaliação de seus conhecimentos prévios e progride através de diversos níveis de dificuldade, aprendendo conceitos fundamentais e avançados da linguagem.
 
