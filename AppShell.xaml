@@ -12,17 +12,4 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
-    <ShellContent
-        Title="SignIn"
-        ContentTemplate="{DataTemplate local:SignIn}"
-        Route="SignIn" />
-    
-    <ShellContent 
-        Title="Quiz1"
-        ContentTemplate="{DataTemplate local:Quiz1}"
-        Route="Quiz1" />
-
-
-
-
 </Shell>
