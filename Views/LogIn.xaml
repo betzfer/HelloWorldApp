@@ -1,0 +1,32 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorldApp.LogIn"
+             Title="User LogIn">
+    <ContentPage.Content>
+        <VerticalStackLayout Padding="20" Spacing="10">
+
+            <!-- Username Input -->
+            <Entry x:Name="UsernameEntry" 
+                   Placeholder="Enter Username" />
+
+            <!-- Password Input -->
+            <Entry x:Name="PasswordEntry" 
+                   Placeholder="Enter Password" 
+                   IsPassword="True" />
+
+            <!-- Login Button -->
+            <Button Text="Log In" 
+                    Clicked="OnLoginClicked" />
+
+            <!-- Display Response -->
+            <Label Text="Response:" 
+                   FontAttributes="Bold" />
+            <ScrollView>
+                <Label x:Name="ApiResponseLabel" 
+                       Text="Response data will appear here." 
+                       LineBreakMode="WordWrap" />
+            </ScrollView>
+
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>
