@@ -4,9 +4,53 @@
              x:Class="HelloWorldApp.Views.Quiz1"
              Title="Quiz1">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+        <Label
+         Margin="30"
+         FontAttributes="Bold"
+         FontSize="24"
+         HorizontalOptions="Center"
+         HorizontalTextAlignment="Center"
+         Text="Quem Descobriu o Brasil?"
+         VerticalOptions="Center" />
+            <Border
+         Margin="30,0"
+         Padding="0,20"
+         Stroke="#1e1e1e"
+         StrokeShape="RoundRectangle 20"
+         StrokeThickness="2">
+                <VerticalStackLayout>
+                <Label
+                     Margin="30"
+                     FontAttributes="Bold"
+                     FontSize="24"
+                     HorizontalOptions="Center"
+                     HorizontalTextAlignment="Center"
+                     Text="&lt;JÁ PROGRAMOU ANTES?/>"
+                     VerticalOptions="Center">
+                </Label>
+                    <RadioButton
+                 Margin="30,0"
+                 CheckedChanged="Verificar"
+                 Content="sim"
+                 FontSize="20"
+                 Value="0" />
+
+                <RadioButton
+                 Margin="30,0"
+                 CheckedChanged="Verificar"
+                 Content="Não"
+                 FontSize="20"
+                 Value="0" />
+            </VerticalStackLayout>
+            </Border>
+
+            <Button
+         x:Name="btnResponder"
+         Margin="30,50"
+         Padding="10,20"
+         Clicked="btnResponder_Clicked"
+         FontAttributes="Bold"
+         FontSize="24"
+         Text="RESPONDER" />
+        </VerticalStackLayout>
 </ContentPage>
