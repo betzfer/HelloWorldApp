@@ -32,9 +32,13 @@ Transformar o aprendizado da programação em uma jornada divertida, desafiadora
 ## AUTORES:
 
 PIETRO HENRIQUE VITO
+
 RENAN FERNANDO RUIZ
+
 ANNA LETICIA FLOR GOUVEIA
+
 MIGUEL RODRIGUES DE OLIVEIRA
+
 RUAN SILVA RABAQUIM
 
 ### 🔗 Links
