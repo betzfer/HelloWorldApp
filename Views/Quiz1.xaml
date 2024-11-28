@@ -2,11 +2,55 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloWorldApp.Views.Quiz1"
-             Title="Quiz1">
+             Title="Quiz1"
+             BackgroundImageSource="quatro.png">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+        <Label
+         Margin="30"
+         FontAttributes="Bold"
+         FontSize="24"
+         HorizontalOptions="Center"
+         HorizontalTextAlignment="Center"
+         Text="HELLO WORLD!"
+         VerticalOptions="Center" />
+            <Border
+         Margin="30,0"
+         Padding="0,20"
+         Stroke="#1e1e1e"
+         StrokeShape="RoundRectangle 20"
+         StrokeThickness="2">
+            <VerticalStackLayout>
+                <Label
+                     Margin="30"
+                     FontAttributes="Bold"
+                     FontSize="24"
+                     HorizontalOptions="Center"
+                     HorizontalTextAlignment="Center"
+                     Text="&lt;JÁ PROGRAMOU ANTES?/>"
+                     VerticalOptions="Center">
+                </Label>
+                <Button
+                    Margin="30,50"
+                    Padding="10,20"
+                    FontAttributes="Bold"
+                    FontSize="24"
+                    Text="SIM">
+                </Button>
+                <Button
+                    Margin="30,50"
+                    Padding="10,20"
+                    FontAttributes="Bold"
+                    FontSize="24"
+                    Text="NÃO">
+                </Button>
+            </VerticalStackLayout>
+        </Border>
+
+            <Button
+         Margin="30,50"
+         Padding="10,20"
+         FontAttributes="Bold"
+         FontSize="24"
+         Text="RESPONDER" />
+        </VerticalStackLayout>
 </ContentPage>

@@ -9,7 +9,7 @@
             HorizontalOptions="Center"
             VerticalOptions="Center">
                 <Image
-                Source="helloworld.png"
+                Source="hello_world.png"
                 HeightRequest="400"
                 Aspect="AspectFit"
                 HorizontalOptions="Center"
