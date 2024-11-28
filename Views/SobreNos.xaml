@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorldApp.Views.SobreNos"
+             Title="SobreNos">
+    
+    <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+
+            <Label Text="Sobre Nós"
+               FontSize="Title"
+               HorizontalTextAlignment="Center"
+               Grid.Row="0" />
+
+            <ScrollView Grid.Row="1">
+                <StackLayout Spacing="20">
+                    <Image Source="polvo.png" HorizontalOptions="Center" />
+                    <Label Text="Somos desenvolvedores de software e jogos indie, dedicados a criar experiências únicas e envolventes. Nosso objetivo é ajudar e divertir o público, oferecendo produtos que ensinam coisas."
+                       FontSize="Medium"
+                       Margin="20" />
+                    <StackLayout Orientation="Horizontal" Spacing="20">
+                        <Image Source="ruan.jpg" HeightRequest="100" WidthRequest="100" />
+                        <Label Text="Ruan"
+                           FontSize="Medium"
+                           HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                    <Label Text="Nossa equipe, atualmente composta por cinco membros entre desenvolvedores e designers, está dedicada a criar experiências inovadoras e envolventes. O que começou como um trabalho de faculdade evoluiu para um projeto ambicioso, que transcendeu as paredes da sala de aula. Estamos comprometidos em oferecer produtos que ajudem e divirtam o público, unindo criatividade e tecnologia em cada criação."
+                       FontSize="Medium"
+                       Margin="20" />
+                    <StackLayout Orientation="Horizontal" Spacing="20"
+                            HorizontalOptions="Center">
+                        <Image Source="moeda.png" />
+                        <Image Source="codigo.png" />
+                        <Image Source="polvo.png" />
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+            <Label Text="© Sua Empresa 2023"
+               FontSize="Small"
+               HorizontalTextAlignment="Center"
+               Grid.Row="2" />
+        </Grid>
+    </ContentPage>

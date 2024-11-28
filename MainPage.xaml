@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloWorldApp.MainPage">
+
     <ScrollView>
-            <VerticalStackLayout
+  
+        <VerticalStackLayout
             Padding="30,0"
             Spacing="25"
             HorizontalOptions="Center"
@@ -15,7 +17,9 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 SemanticProperties.Description="Polvinho" />
+            
             </VerticalStackLayout>
+                
         </ScrollView>
 
     </ContentPage>
