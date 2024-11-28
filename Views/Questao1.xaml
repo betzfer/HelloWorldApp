@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorldApp.Views.Questao1"
+             Title="Questao1">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+        <StackLayout Orientation="Horizontal" Spacing="20" Grid.Row="0">
+                <Image Source="profile.png" 
+                   VerticalOptions="Center" />
+                <Label Text="Olá, Nome" FontSize="Title" VerticalOptions="Center" />
+                <Label Text="Nível: Médio" FontSize="Medium" VerticalOptions="Center" />
+                <Image Source="heart.png" 
+                   VerticalOptions="Center" />
+                <Label Text="2" VerticalOptions="Center" />
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand" Grid.Row="1">
+                <Image Source="octopus.png" 
+                   VerticalOptions="CenterAndExpand" />
+                <Label Text="React.js" FontSize="Title" VerticalOptions="CenterAndExpand" />
+                <Label Text="function WelcomeMessage() { return ( Welcome! ); }" FontSize="Medium" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+
+        <Grid>
+            <Label x:Name="questionLabel" Text="" FontSize="Medium" VerticalOptions="CenterAndExpand" />
+            <Frame BorderColor="Gray" CornerRadius="10">
+                <Label x:Name="answerLabel" Text="" FontSize="Medium" />
+            </Frame>
+        </Grid>
+
+
+
+    </Grid>
+    </ContentPage>
