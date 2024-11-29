@@ -1,4 +1,4 @@
-namespace HelloWorldApp.Views;
+namespace HelloWorldApp;
 
 public partial class Cursos : ContentPage
 {
@@ -6,4 +6,9 @@ public partial class Cursos : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void Border_Focused(object sender, FocusEventArgs e)
+    {
+
+    }
 }

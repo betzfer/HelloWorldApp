@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorldApp.parabens"
+             Title="Parabéns">
+    <!-- Gradiente no fundo -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#2298E2" Offset="0.0" />
+            <GradientStop Color="#AC91FF" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+        <!-- Imagem sobre o gradiente -->
+        <Image Source="logotrans.png"
+               Aspect="AspectFill" 
+               Opacity="0.8"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand" />
+
+        <!-- Conteúdo principal -->
+        <ScrollView>
+            <VerticalStackLayout>
+                <!-- Título principal -->
+                <Label
+                    Text="HELLO WORLD"
+                    FontSize="35"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    VerticalOptions="Start"
+                    TextColor="White"
+                    Margin="0,40,0,0" />
+
+                <!-- Mensagem de Parabéns -->
+                <VerticalStackLayout
+                    BackgroundColor="#625EFB"
+                    Margin="0, 40"
+                    Padding="20"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Start">
+                    <Label
+                        Text="PARABÉNS!"
+                        FontSize="30"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        TextColor="White" />
+                    <Image
+                        Source="reactt.png"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        HorizontalOptions="Center" />
+                    <Label
+                        Text="NÍVEL: BÁSICO"
+                        FontSize="18"
+                        HorizontalOptions="Center"
+                        TextColor="White" />
+                </VerticalStackLayout>
+
+                <!-- Botão -->
+                <Border
+    Stroke="White"
+    StrokeThickness="2"
+    StrokeShape="RoundRectangle 20"
+    Padding="0"
+    HorizontalOptions="Center"
+    VerticalOptions="Start">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="#3B5BFB" Offset="0.0" />
+                            <GradientStop Color="#2F2D97" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Label
+        Text="COMEÇAR-JÁ"
+        FontSize="20"
+        FontAttributes="Bold"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        TextColor="White"
+        Padding="15,10" />
+                </Border>
+
+                <!-- Ícones de tecnologia -->
+                <HorizontalStackLayout
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Margin="0,20">
+                    <Image Source="reactt.png" />
+                    <Image Source="javascript.png" Margin="10,0" />
+                    <Image Source="csss.png" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

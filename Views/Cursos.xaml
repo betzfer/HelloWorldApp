@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HelloWorldApp.Views.Cursos"
+             x:Class="HelloWorldApp.Cursos"
              Title="Cursos">
     
     <Grid>
@@ -11,19 +11,22 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <StackLayout Orientation="Horizontal" Grid.Row="0">
-                <Label Text="CURSOS" FontSize="Title" VerticalOptions="Center" />
-            </StackLayout>
+            <StackLayout>
+            <Border BackgroundColor="#B6CFFF"  HeightRequest="70" StrokeShape="RoundRectangle 0 0 20">
+                <Label Text="CURSOS" FontSize="30" HorizontalOptions="Center" Margin="10" FontAttributes="Bold" TextColor="#625EFB" />
+            </Border>
+        </StackLayout>
 
             <ScrollView Grid.Row="1">
                 <StackLayout Spacing="20">
-                    <Frame BorderColor="Gray" CornerRadius="10">
+                    <Frame BorderColor="#B6CFFF" CornerRadius="10">
                         <StackLayout Orientation="Horizontal" Spacing="20">
                             <Image Source="javascript.png" 
                                VerticalOptions="Center" />
                             <StackLayout VerticalOptions="Center">
                                 <Label Text="JavaScript" FontSize="Medium" />
-                                <Label Text="É a base de uma página da web, definindo a estrutura e o conteúdo." />
+                                <Label Text="É a base de uma página da web,
+                                       definindo a estrutura e o conteúdo." />
                             </StackLayout>
                             <Label Text="R$ 500" VerticalOptions="Center" />
                         </StackLayout>

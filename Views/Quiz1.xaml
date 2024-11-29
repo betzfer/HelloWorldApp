@@ -2,23 +2,39 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloWorldApp.Quiz1"
-             Title="Quiz1"
-             BackgroundImageSource="quatro.png">
-    
-    <ContentPage.Content>
+             Title="Quiz1">
+    <!-- Gradiente no fundo -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#2298E2" Offset="0.0" />
+            <GradientStop Color="White" Offset="0.5" />
+            <GradientStop Color="#AC91FF" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <!-- Layout em camadas -->
+    <Grid>
+        <!-- Imagem sobre o gradiente -->
+        <Image Source="logotrans.png"
+               Aspect="AspectFill" 
+            Opacity="0.8"
+            VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand" />
+
         <ScrollView>
-        <VerticalStackLayout>
-        <Label
+            <VerticalStackLayout>
+                <Label
          TextColor="White"
          Margin="30"
          FontAttributes="Bold"
-         FontSize="30"
+         FontSize="35"
          HorizontalOptions="Center"
          HorizontalTextAlignment="Center"
          Text="HELLO WORLD!"
          VerticalOptions="Center"
          FontFamily="CustomFont" 
-         CharacterSpacing="2"/>
+         CharacterSpacing="2"
+         />
                 <Border
                  Margin="0,30" 
                  Stroke="#1e1e1e"
@@ -28,7 +44,7 @@
                  HorizontalOptions="Fill"
                  VerticalOptions="Start">
                     <VerticalStackLayout>
-                <Label
+                        <Label
                      Margin="20"
                      FontAttributes="Bold"
                      FontSize="18"
@@ -37,31 +53,47 @@
                      Text="&lt;JÁ PROGRAMOU ANTES?/>"
                      VerticalOptions="Center"
                     TextColor="White">
-                </Label>
-                <Button
-                    Margin="30,50"
+                        </Label>
+                        <HorizontalStackLayout
+                            HorizontalOptions="Center"
+                            >
+                            <Button
                     Padding="10,20"
                     FontAttributes="Bold"
-                    FontSize="24"
-                    Text="SIM">
-                </Button>
-                <Button
-                    Margin="30,50"
+                    FontSize="20"
+                    Text="SIM"
+                    WidthRequest="100"
+                    Margin="10"
+                    BackgroundColor="#2F2D97">
+                            </Button>
+                            <Button
                     Padding="10,20"
                     FontAttributes="Bold"
-                    FontSize="24"
-                    Text="NÃO">
-                </Button>
-            </VerticalStackLayout>
-        </Border>
+                    FontSize="20"
+                    Text="NÃO"
+                    WidthRequest="100"
+                    Margin="10"
+                    BackgroundColor="#2F2D97">
+                            </Button>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
 
-            <Button
+                <Button
          Margin="30,50"
          Padding="10,20"
          FontAttributes="Bold"
-         FontSize="24"
-         Text="RESPONDER" />
-        </VerticalStackLayout>
+         FontSize="20"
+         Text="RESPONDER"
+         WidthRequest="200"/>
+
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Image Source="reactt.png"></Image>
+                    <Image Source="javascript.png"></Image>
+                    <Image Source="csss.png"></Image>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        
         </ScrollView>
-    </ContentPage.Content>
+    </Grid>
 </ContentPage>

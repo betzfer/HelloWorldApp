@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorldApp.Quiz3"
+             Title="Quiz3">
+    <!-- Gradiente no fundo -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#2298E2" Offset="0.0" />
+            <GradientStop Color="White" Offset="0.5" />
+            <GradientStop Color="#AC91FF" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <!-- Layout em camadas -->
+    <Grid>
+        <!-- Imagem sobre o gradiente -->
+        <Image Source="logotrans.png"
+               Aspect="AspectFill" 
+               Opacity="0.8"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand" />
+
+        <ScrollView>
+            <VerticalStackLayout>
+                <!-- Título -->
+                <Label
+                    TextColor="White"
+                    Margin="30"
+                    FontAttributes="Bold"
+                    FontSize="35"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    Text="HELLO WORLD!"
+                    VerticalOptions="Center"
+                    FontFamily="CustomFont" 
+                    CharacterSpacing="2" />
+
+                <!-- Caixa de Pergunta -->
+                <Border
+                    Margin="0,30" 
+                    Stroke="#1e1e1e"
+                    StrokeShape="RoundRectangle 20"
+                    StrokeThickness="2"
+                    BackgroundColor="#625EFB"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Start">
+                    <VerticalStackLayout>
+                        <Label
+                            Margin="20"
+                            FontAttributes="Bold"
+                            FontSize="18"
+                            HorizontalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            Text="&lt;A QUANTOS ANOS PROGRAMA?/>"
+                            VerticalOptions="Center"
+                            TextColor="White" />
+                        <!-- Botões de Resposta -->
+                        <HorizontalStackLayout
+                            HorizontalOptions="Center">
+                            <Button
+                                Padding="10,20"
+                                FontAttributes="Bold"
+                                FontSize="20"
+                                Text="0-1"
+                                WidthRequest="100"
+                                Margin="10"
+                                BackgroundColor="#2F2D97"
+                                TextColor="White" />
+                            <Button
+                                Padding="10,20"
+                                FontAttributes="Bold"
+                                FontSize="20"
+                                Text="1-3"
+                                WidthRequest="100"
+                                Margin="10"
+                                BackgroundColor="#2F2D97"
+                                TextColor="White" />
+                            <Button
+                                Padding="10,20"
+                                FontAttributes="Bold"
+                                FontSize="20"
+                                Text="+5"
+                                WidthRequest="100"
+                                Margin="10"
+                                BackgroundColor="#2F2D97"
+                                TextColor="White" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Rodapé com Ícones -->
+                <HorizontalStackLayout HorizontalOptions="Center" Margin="30,50">
+                    <Image Source="reactt.png" />
+                    <Image Source="javascript.png" />
+                    <Image Source="csss.png" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
