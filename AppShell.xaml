@@ -19,7 +19,7 @@
             <ShellContent 
          Title="Cursos" 
          ContentTemplate="{DataTemplate local:Cursos}" 
-         Route="Cursos" />
+         Route="Cursos " />
         </Tab>
     </TabBar>
 

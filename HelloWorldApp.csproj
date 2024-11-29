@@ -57,11 +57,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\colch.png" />
 	  <None Remove="Resources\Images\csss.png" />
 	  <None Remove="Resources\Images\hello_world.png" />
 	  <None Remove="Resources\Images\javascript.png" />
 	  <None Remove="Resources\Images\logotrans.png" />
 	  <None Remove="Resources\Images\reactt.png" />
+	  <None Remove="Resources\Images\X.png" />
 	</ItemGroup>
 
 	<ItemGroup>

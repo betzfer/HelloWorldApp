@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloWorldApp.Cursos"
-             Title="Cursos">
+             Title="Cursos"
+             Background="#625EFB">
     
     <Grid>
             <Grid.RowDefinitions>
@@ -18,57 +19,46 @@
         </StackLayout>
 
             <ScrollView Grid.Row="1">
-                <StackLayout Spacing="20">
-                    <Frame BorderColor="#B6CFFF" CornerRadius="10">
+                <StackLayout Spacing="20" Margin="13" >
+                <Frame BorderColor="#B6CFFF" CornerRadius="10" BackgroundColor="#B6CFFF">
                         <StackLayout Orientation="Horizontal" Spacing="20">
                             <Image Source="javascript.png" 
                                VerticalOptions="Center" />
                             <StackLayout VerticalOptions="Center">
-                                <Label Text="JavaScript" FontSize="Medium" />
+                                <Label Text="JavaScript" FontSize="Medium" TextColor="#625EFB" FontAttributes="Bold" />
                                 <Label Text="É a base de uma página da web,
-                                       definindo a estrutura e o conteúdo." />
+                                       definindo a estrutura e o conteúdo." TextColor="#625EFB" FontAttributes="Bold" />
                             </StackLayout>
                             <Label Text="R$ 500" VerticalOptions="Center" />
                         </StackLayout>
                     </Frame>
 
-                    <Frame BorderColor="Gray" CornerRadius="10">
-                        <StackLayout Orientation="Horizontal" Spacing="20">
-                            <Image Source="react.png" 
-                               VerticalOptions="Center" />
-                            <StackLayout VerticalOptions="Center">
-                                <Label Text="React" FontSize="Medium" />
-                                <Label Text="É responsável pela aparência visual da página." />
-                            </StackLayout>
-                            <Label Text="R$ 500" VerticalOptions="Center" />
+                <Frame BorderColor="#B6CFFF" CornerRadius="10" BackgroundColor="#B6CFFF">
+                    <StackLayout Orientation="Horizontal" Spacing="20">
+                        <Image Source="reactt.png" 
+                VerticalOptions="Center" />
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="React" FontSize="Medium" TextColor="#625EFB" FontAttributes="Bold" />
+                            <Label Text="É responsável pela aparência visual da página." TextColor="#625EFB" FontAttributes="Bold" />
                         </StackLayout>
-                    </Frame>
+                        <Label Text="R$ 500" VerticalOptions="Center" />
+                    </StackLayout>
+                </Frame>
 
-                    <Frame BorderColor="Gray" CornerRadius="10">
-                        <StackLayout Orientation="Horizontal" Spacing="20">
-                            <Image Source="css.png" 
-                               VerticalOptions="Center" />
-                            <StackLayout VerticalOptions="Center">
-                                <Label Text="CSS" FontSize="Medium" />
-                                <Label Text="Utilizada para criar interfaces de usuário interativas." />
-                            </StackLayout>
-                            <Label Text="R$ 500" VerticalOptions="Center" />
+                <Frame BorderColor="#B6CFFF" CornerRadius="10" BackgroundColor="#B6CFFF">
+                    <StackLayout Orientation="Horizontal" Spacing="20">
+                        <Image Source="csss.png" 
+                VerticalOptions="Center" />
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="Css" FontSize="Medium" TextColor="#625EFB" FontAttributes="Bold" />
+                            <Label Text="É a base de uma página da web,
+                        definindo a estrutura e o conteúdo." TextColor="#625EFB" FontAttributes="Bold" />
                         </StackLayout>
-                    </Frame>
-
-                    <Frame BorderColor="Gray" CornerRadius="10">
-                        <StackLayout Orientation="Horizontal" Spacing="20">
-                            <Image Source="csharp.png" 
-                               VerticalOptions="Center" />
-                            <StackLayout VerticalOptions="Center">
-                                <Label Text="C#" FontSize="Medium" />
-                                <Label Text="Em breve..." />
-                            </StackLayout>
-                            <Image Source="lock.png" 
-                               VerticalOptions="Center" />
-                        </StackLayout>
-                    </Frame>
-                </StackLayout>
+                        <Label Text="R$ 500" VerticalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+      
+            </StackLayout>
             </ScrollView>
 
             <StackLayout Orientation="Horizontal" Spacing="20" Grid.Row="2">
