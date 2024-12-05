@@ -6,4 +6,9 @@ public partial class Questao1 : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void Quiz1_Clicked(object sender, EventArgs e)
+    {
+		await Navigation.PushAsync(new Quiz1());
+    }
 }

@@ -2,40 +2,108 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloWorldApp.Views.Questao1"
-             Title="Questao1">
+             BackgroundColor="#A3C9FF"
+             Title="Questao1"
+             NavigationPage.HasNavigationBar="False"
+             >
 
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
 
-        <StackLayout Orientation="Horizontal" Spacing="20" Grid.Row="0">
-                <Image Source="profile.png" 
+        <!-- Header Section -->
+        <Grid Grid.Row="0" Padding="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Image Source="profile.png"
+                   HeightRequest="40"
+                   WidthRequest="40"
                    VerticalOptions="Center" />
-                <Label Text="Olá, Nome" FontSize="Title" VerticalOptions="Center" />
-                <Label Text="Nível: Médio" FontSize="Medium" VerticalOptions="Center" />
-                <Image Source="heart.png" 
-                   VerticalOptions="Center" />
-                <Label Text="2" VerticalOptions="Center" />
-            </StackLayout>
-
-            <StackLayout VerticalOptions="CenterAndExpand" Grid.Row="1">
-                <Image Source="octopus.png" 
-                   VerticalOptions="CenterAndExpand" />
-                <Label Text="React.js" FontSize="Title" VerticalOptions="CenterAndExpand" />
-                <Label Text="function WelcomeMessage() { return ( Welcome! ); }" FontSize="Medium" VerticalOptions="CenterAndExpand" />
-            </StackLayout>
-
-        <Grid>
-            <Label x:Name="questionLabel" Text="" FontSize="Medium" VerticalOptions="CenterAndExpand" />
-            <Frame BorderColor="Gray" CornerRadius="10">
-                <Label x:Name="answerLabel" Text="" FontSize="Medium" />
-            </Frame>
+            <Label Text="Olá, Nome"
+                   FontSize="18"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   Margin="10,0"
+                   Grid.Column="1" />
+            <ProgressBar Progress="0.5"
+                         VerticalOptions="Center"
+                         WidthRequest="100"
+                         Margin="10,0"
+                         Grid.Column="2" />
+            <Image Source="heart.png"
+                   HeightRequest="30"
+                   WidthRequest="30"
+                   VerticalOptions="Center"
+                   Margin="5,0,0,0"
+                   Grid.Column="3" />
+            <Label Text="2"
+                   FontSize="16"
+                   VerticalOptions="Center"
+                   TextColor="Black"
+                   Grid.Column="4"
+                   Margin="5,0,0,0" />
         </Grid>
 
+        <!-- Main Content Section -->
+        <ScrollView Grid.Row="1" Margin="0,10,0,10">
+            <VerticalStackLayout Spacing="20" Padding="10">
+                <!-- React.js and Octopus Section -->
+                <Frame BackgroundColor="#6364FF"
+                       CornerRadius="15"
+                       Padding="10"
+                       HasShadow="True">
+                    <VerticalStackLayout Spacing="10" HorizontalOptions="CenterAndExpand">
+                        <Image Source="octopus.png"
+                               HeightRequest="80"
+                               VerticalOptions="Center" />
+                        <Label Text="React.js"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="Center" />
+                        <Frame BackgroundColor="#4A4FEB"
+                               CornerRadius="10"
+                               Padding="10">
+                            <Label Text=""
+                                   FontSize="14"
+                                   TextColor="White"
+                                   FontAttributes="Bold"
+                                   LineBreakMode="WordWrap"
+                                   HorizontalOptions="Center" />
+                        </Frame>
+                    </VerticalStackLayout>
+                </Frame>
 
+                <!-- Prompt Section -->
+                <Label Text="Vamos criar um componente WelcomeMessage:"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="Black" />
 
+                <!-- Coding Area -->
+                <Frame BackgroundColor="#6364FF"
+                       CornerRadius="15"
+                       Padding="10"
+                       HasShadow="True">
+                    <Label Text="&lt;p>Welcome!&lt;/p>"
+                           TextType="Html"
+                           FontSize="14"
+                           TextColor="White"
+                           LineBreakMode="WordWrap"
+                           HorizontalOptions="Center" />
+                </Frame>
+                <Button x:Name="Quiz1" Text="Quiz1" Clicked="Quiz1_Clicked"/>
+            </VerticalStackLayout>
+        </ScrollView>
     </Grid>
-    </ContentPage>
+</ContentPage>

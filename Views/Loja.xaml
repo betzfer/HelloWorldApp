@@ -1,12 +1,68 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HelloWorldApp.Views.Loja"
-             Title="Loja">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="HelloWorldApp.Loja"
+             BackgroundColor="#625EFB">
+
+    <!-- Main Layout -->
+    <ScrollView>
+    <StackLayout Padding="10" Spacing="20">
+
+        <!-- Header -->
+        <Border BackgroundColor="#B6CFFF" StrokeShape="RoundRectangle 0 0 20 20" HeightRequest="70" Padding="10">
+            <Grid>
+                <Image Source="xuxa.png" WidthRequest="30" HeightRequest="30" HorizontalOptions="Start" />
+                <Label Text="LOJA" FontSize="20" FontAttributes="Bold" TextColor="#625EFB" VerticalOptions="Center" HorizontalOptions="Center" />
+            </Grid>
+        </Border>
+
+        <!-- Cursos Section -->
+        <Border BackgroundColor="#B6CFFF" StrokeShape="RoundRectangle 10" Padding="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Title -->
+                <Label Text="CURSOS" FontSize="24" FontAttributes="Bold" TextColor="#625EFB" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" />
+
+                <!-- Icons Row -->
+                <StackLayout  >
+                    <Image Source="csss.png" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="40" HeightRequest="40" />
+                    <Image Source="javascript.png" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="40" HeightRequest="40" />
+                    <Image Source="reactt.png" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="40" HeightRequest="40" />
+                    <Image Source="java.png" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="40" HeightRequest="40" />
+                </StackLayout>
+            </Grid>
+        </Border>
+
+        <!-- Ofertas Especiais Section -->
+        <Label Text="OFERTAS ESPECIAIS" FontSize="18" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center" />
+
+        <!-- Locked Offers -->
+        <StackLayout Spacing="10">
+            <!-- First Offer -->
+            <Border BackgroundColor="#B6CFFF" StrokeShape="RoundRectangle 10" Padding="10">
+                <Grid >
+                    <Image Source="chest.png" WidthRequest="40" HeightRequest="40" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    <Image Source="block.png" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center" />
+                </Grid>
+            </Border>
+
+            <!-- Second Offer -->
+            <Border BackgroundColor="#B6CFFF" StrokeShape="RoundRectangle 10" Padding="10">
+                <Grid>
+                    <Image Source="chest.png" WidthRequest="40" HeightRequest="40" VerticalOptions="Center"  HorizontalOptions="Start" />
+                    <Image Source="block.png" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center" />
+                </Grid>
+            </Border>
+        </StackLayout>
+
+        <!-- Bottom Navigation -->
+
+    </StackLayout>
+    </ScrollView>
 </ContentPage>

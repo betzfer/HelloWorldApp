@@ -57,13 +57,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\aqua.png" />
+	  <None Remove="Resources\Images\arrow.png" />
+	  <None Remove="Resources\Images\block.png" />
+	  <None Remove="Resources\Images\chest.png" />
 	  <None Remove="Resources\Images\colch.png" />
 	  <None Remove="Resources\Images\csss.png" />
+	  <None Remove="Resources\Images\donation.png" />
 	  <None Remove="Resources\Images\hello_world.png" />
+	  <None Remove="Resources\Images\java.png" />
 	  <None Remove="Resources\Images\javascript.png" />
 	  <None Remove="Resources\Images\logotrans.png" />
+	  <None Remove="Resources\Images\menu.png" />
+	  <None Remove="Resources\Images\octopus.png" />
+	  <None Remove="Resources\Images\octopus2.png" />
 	  <None Remove="Resources\Images\reactt.png" />
-	  <None Remove="Resources\Images\X.png" />
+	  <None Remove="Resources\Images\trophy.png" />
+	  <None Remove="Resources\Images\xuxa.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -104,9 +114,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Quiz3.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Resultado.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SignIn.xaml">

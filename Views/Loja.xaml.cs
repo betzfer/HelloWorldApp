@@ -1,4 +1,4 @@
-namespace HelloWorldApp.Views;
+namespace HelloWorldApp;
 
 public partial class Loja : ContentPage
 {

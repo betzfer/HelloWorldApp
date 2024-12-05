@@ -1,4 +1,6 @@
-﻿namespace HelloWorldApp
+﻿using HelloWorldApp.Views;
+
+namespace HelloWorldApp
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new Quiz1());
         }
     }
 }

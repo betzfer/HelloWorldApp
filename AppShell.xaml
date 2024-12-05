@@ -8,19 +8,20 @@
     Title="HelloWorldApp">
 
 
-    <TabBar>
+    <!--<TabBar>
         <Tab Title="Home">
             <ShellContent 
                 Title="Home" 
                 ContentTemplate="{DataTemplate local:MainPage}" 
                 Route="MainPage" />
         </Tab>
-        <Tab Title="Cursos">
+        <Tab Title="Questao1">
             <ShellContent 
-         Title="Cursos" 
-         ContentTemplate="{DataTemplate local:Cursos}" 
-         Route="Cursos " />
+ Title="Questao1" 
+ ContentTemplate="{DataTemplate local:Questao1}" 
+ Route="Questao1 " />
         </Tab>
-    </TabBar>
+
+    </TabBar>-->
 
 </Shell>

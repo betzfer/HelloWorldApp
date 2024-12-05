@@ -1,6 +1,6 @@
-namespace HelloWorldApp.Views;
+namespace HelloWorldApp;
 
-public partial class Niveis : ContentView
+public partial class Niveis : ContentPage
 {
 	public Niveis()
 	{

@@ -1,12 +1,38 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HelloWorldApp.Views.Doacao"
-             Title="Doacao">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="HelloWorldApp.Doacao"
+             BackgroundColor="#625EFB">
+
+    <!-- Main Layout -->
+    <ScrollView>
+    <StackLayout Padding="10" Spacing="20">
+
+        <!-- Header -->
+        <Border BackgroundColor="#B6CFFF" StrokeShape="RoundRectangle 0 0 20 20" HeightRequest="70" Padding="10">
+            <Grid>
+                <Image Source="xuxa.png" WidthRequest="30" HeightRequest="30" HorizontalOptions="Start"/>
+                <Label Text="Nos Apoie!" FontSize="20" FontAttributes="Bold" TextColor="#625EFB" VerticalOptions="Center" HorizontalOptions="Center" />
+                
+            </Grid>
+        </Border>
+
+        <!-- Donation Text -->
+        <Label Text="Ficou interessado e gostou do nosso trabalho? Será possível nos ajudar na realização dessa obra e de muitos outros futuros! A aba de doações está DISPONÍVEL!"
+               FontSize="16"
+               HorizontalTextAlignment="Center"
+               TextColor="White"
+               FontAttributes="Bold" />
+
+        <!-- Donation Button -->
+        <Border BackgroundColor="#B6CFFF" StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HorizontalOptions="Center">
+            <Label Text="DOE AQUI!" FontSize="20" FontAttributes="Bold" TextColor="#625EFB" HorizontalTextAlignment="Center" />
+        </Border>
+
+        <!-- Image Section -->
+        <Frame BackgroundColor="Transparent" CornerRadius="20" Padding="0" BorderColor="#B6CFFF">
+            <Image Source="aqua.png" Aspect="AspectFill" />
+        </Frame>
+
+    </StackLayout>
+    </ScrollView>
 </ContentPage>
