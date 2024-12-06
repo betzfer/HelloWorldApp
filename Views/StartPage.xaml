@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorldApp.StartPage"
+             BackgroundColor="#A3C9FF"
+             Title="React.js"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Header Section -->
+        <Grid Grid.Row="0" Padding="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Profile Image -->
+            <Image Source="profile.png"
+                   HeightRequest="40"
+                   WidthRequest="40"
+                   VerticalOptions="Center" />
+            <!-- Greeting and Balance -->
+            <Label Text="Olá, Nome"
+                   FontSize="18"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   Margin="10,0"
+                   Grid.Column="1" />
+            <HorizontalStackLayout Grid.Column="2" HorizontalOptions="End">
+                <Image Source="coin.png"
+                       HeightRequest="24"
+                       WidthRequest="24"
+                       VerticalOptions="Center" />
+                <Label Text="500"
+                       FontSize="16"
+                       VerticalOptions="Center"
+                       TextColor="Black"
+                       Margin="5,0,0,0" />
+            </HorizontalStackLayout>
+            <!-- Country Flag -->
+            <Image Source="brazil_flag.png"
+                   HeightRequest="30"
+                   WidthRequest="30"
+                   VerticalOptions="Center"
+                   Margin="10,0,0,0"
+                   Grid.Column="3" />
+        </Grid>
+
+        <!-- Main Content Section -->
+        <ScrollView Grid.Row="1" Margin="0,10,0,10">
+            <VerticalStackLayout Spacing="20" Padding="10">
+
+                <!-- React.js Level Section -->
+                <Frame BackgroundColor="#6364FF"
+                       CornerRadius="15"
+                       Padding="10"
+                       HasShadow="True">
+                    <HorizontalStackLayout>
+                        <Image Source="atom.png"
+                               HeightRequest="30"
+                               VerticalOptions="Center" />
+                        <Label Text="React.js"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="Center" />
+                        <Label Text="Nível: Médio"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="EndAndExpand"
+                               Margin="10,0,0,0" />
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <!-- Image Section -->
+                <Image Source="isometric_room.png"
+                       HeightRequest="200"
+                       HorizontalOptions="Center" />
+
+                <!-- Description Section -->
+                <Label Text="Em uma era dominada por tecnologias digitais, a programação tornou-se uma habilidade fundamental, abrindo portas para diversas áreas e oportunidades. Imagine aprender programação de forma divertida e interativa! Este jogo permitirá que você domine os conceitos básicos e avançados da linguagem. Com um sistema de tutoria inteligente, você receberá instruções, feedback e auxílio na resolução de erros, aprendendo na prática. Crie seus próprios personagens, defina suas ações e interaja com o mundo do jogo."
+                       FontSize="14"
+                       TextColor="Black"
+                       LineBreakMode="WordWrap"
+                       HorizontalTextAlignment="Center" />
+
+                <!-- Button Section -->
+                <Button Text="TESTE GRÁTIS"
+                        BackgroundColor="#4A4FEB"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        CornerRadius="20"
+                        HorizontalOptions="Center"
+                        WidthRequest="200"
+                        HeightRequest="50"
+                        Padding="10,0" />
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -60,6 +60,7 @@
 	  <None Remove="Resources\Images\aqua.png" />
 	  <None Remove="Resources\Images\arrow.png" />
 	  <None Remove="Resources\Images\block.png" />
+	  <None Remove="Resources\Images\bloco.png" />
 	  <None Remove="Resources\Images\chest.png" />
 	  <None Remove="Resources\Images\colch.png" />
 	  <None Remove="Resources\Images\csss.png" />
@@ -120,6 +121,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SobreNos.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\StartPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

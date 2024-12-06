@@ -72,7 +72,9 @@
                             <GradientStop Color="#2F2D97" Offset="1.0" />
                         </LinearGradientBrush>
                     </Border.Background>
-                    <Label
+                    <Button
+        x:Name="startNow"
+        Clicked="Start_Agora"
         Text="COMEÇAR-JÁ"
         FontSize="20"
         FontAttributes="Bold"
@@ -80,6 +82,7 @@
         VerticalOptions="Center"
         TextColor="White"
         Padding="15,10" />
+
                 </Border>
 
                 <!-- Ícones de tecnologia -->

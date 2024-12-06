@@ -6,4 +6,9 @@ public partial class parabens : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void Start_Agora(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new StartPage());
+    }
 }
